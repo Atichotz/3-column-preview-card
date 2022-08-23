@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* === Global ===*/
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 25vh auto;
+    max-height: max-content;
+    max-width: max-content;
+    animation: 1.5s sildIn;
+}
+.box-container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header-info{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.body-info{
+    transition: all 1s ease;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    color: rgb(235, 235, 235);
+}
+button{  
+    margin-top: 5rem;
+    padding:1rem 2rem;
+    border-radius: 40px;
+    border: transparent;
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+/* === Global ===*/
+
+.card-f1{
+    padding: 3rem;
+    width: 280px;
+    color: white;
+    background-color: var(--Bright-orange);
+}
+.card-f1 .card-header{
+    margin: 1rem 0 1rem 0;
+}
+.card-f2{
+    padding: 3rem;
+    width: 280px;
+    color: white;
+    background-color: var(--Dark-cyan);
+}
+.card-f2 .card-header{
+    margin: 1rem 0 1rem 0;
+}
+.card-f3{
+    padding: 3rem;
+    width: 280px;
+    color: white;
+    background-color: var(--Very-dark-cyan);
+}
+.card-f3 .card-header{
+    margin: 1rem 0 1rem 0;
+}
+button.og{
+
+    color: var(--Bright-orange);
+}
+button.dc{
+    color: var(--Dark-cyan);    
+}
+button.vdc{
+    color: var(--Very-dark-cyan);   
+}
+button:hover{
+}
+@keyframes sildIn {
+    0%{
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width:375px){
+.box-container{
+    flex-direction: column;
+}
+}
