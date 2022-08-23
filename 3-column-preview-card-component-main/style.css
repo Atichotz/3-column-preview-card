@@ -21,6 +21,7 @@
     display: flex;
     border-radius: 10px;
     overflow: hidden;
+    transition: 1s all ease;
 }
 .header-info{
     font-family: 'Big Shoulders Display', cursive;
@@ -35,8 +36,16 @@ button{
     margin-top: 5rem;
     padding:1rem 2rem;
     border-radius: 40px;
+    border: 1px solid black;
     border: transparent;
     background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+button:hover{  
+    border: 2px solid white;
+    background-color: transparent;
     font-family: 'Lexend Deca', sans-serif;
 }
 /* === Global ===*/
@@ -69,14 +78,17 @@ button{
     margin: 1rem 0 1rem 0;
 }
 button.og{
-
     color: var(--Bright-orange);
 }
+
 button.dc{
     color: var(--Dark-cyan);    
 }
 button.vdc{
     color: var(--Very-dark-cyan);   
+}
+button:where(.og,.dc,.vdc):hover{
+ color: white;
 }
 button:hover{
 }
